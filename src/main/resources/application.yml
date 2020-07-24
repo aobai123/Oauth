@@ -1,0 +1,22 @@
+ spring:
+  thymeleaf:
+    encoding: UTF-8
+    cache: false
+    mode: HTML5
+  datasource:
+    type: org.apache.commons.dbcp2.BasicDataSource
+    url: jdbc:mysql://localhost:3306/demo?useUnicode=true&allowPublicKeyRetrieval=true&useSSL=false&characterEncoding=utf8&allowMultiQueries=true
+    username: root
+    password: admin
+    driver-class-name: com.mysql.jdbc.Driver
+    dbcp2:
+      initial-size: 5
+      max-active: 25
+      max-idle: 10
+      min-idle: 5
+      max-wait-millis: 10000
+      validation-query: SELECT 1
+      connection-properties: characterEncoding=utf8
+
+
+
